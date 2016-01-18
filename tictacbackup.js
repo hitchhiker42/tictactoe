@@ -26,25 +26,18 @@ $(document).ready(function(){
 				if ($("#" + combination[i][j]).hasClass(now)) {
 					counter++;
 				}	
-				if (counter == 3) {
-					if (now == "oh") {
-						setTimeout(function(){
-						$("#game").hide();
-						$("#vogonwin").show();}, 100)
-					}
-					if (now == "ex") {
-						setTimeout(function(){
-						$("#game").hide();
-						$("#earthwin").show();}, 100)
-
-					}
-				}
+			if (counter == 3) {
+				if (now == "oh") {alert("player 2 has won!");}
+				if (now == "ex") {alert("player 1 has won!");} }
 			}
 		}
-
 		if (counter != 0 && ($(".oh").length) + ($(".ex").length) == 9){ 
 				console.log("game over!");
 		}
 		
 	})
 })
+
+
+	// if ( $(".1").hasClass("oh") && $(".2").hasClass("oh") && $(".3").hasClass("oh") )
+	// 			{ }

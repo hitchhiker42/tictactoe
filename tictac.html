@@ -9,9 +9,29 @@
  </head>
  <body>
 
- <p class= "title"> Save yourself from hearing Vogon poetry by beating them at a game of strategy and cunning:</p>
- <p class="title"> Tic-Tac-Toe!</p>
-	
+ <div id = "earthwin"> 
+	 <img src = "https://aggiesprite.files.wordpress.com/2014/08/freddie-mercury-meme.png?w=490">
+	 <div class ="refresh">
+		<p>You Win!</p>
+		<input class="button" value="Play again!" onClick="document.location.reload(true)">
+	 </div>
+ </div>
+
+ <div id = "vogonwin">
+ 	<img src = "http://mylolface.com/assets/faces/disappointed-so-close-freddie-mercury.jpg" >
+ 	<div class ="refresh">
+		<p>You Lose D:</p>
+		<input class="button" value="Play again!" onClick="document.location.reload(true)">
+	 </div>
+ </div>
+
+ <div id = "title">
+	 <p> Save yourself from hearing Vogon poetry by beating them at a game of strategy and cunning:</p>
+	 <p> Tic-Tac-Toe!</p>
+</div>
+
+
+<div id = "game">
 	<table>
 		<tr>
 			<td id="1"></td>
@@ -29,6 +49,7 @@
 			<td id="9"></td>
 		</tr>			
 	</table>
+</div>
 
  </body>
  </html>
