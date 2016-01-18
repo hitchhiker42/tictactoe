@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8"/>
+   <title>Tic Tac Toe!</title>
+   <link rel="stylesheet" type="text/css" href="tictac.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="tictac.js"></script>
+ </head>
+ <body>
+
+ <div id = "earthwin"> 
+	 <img src = "https://aggiesprite.files.wordpress.com/2014/08/freddie-mercury-meme.png?w=490">
+	 <div class ="refresh">
+		<p>You Win!</p>
+		<input class="button" value="Play again!" onClick="document.location.reload(true)">
+	 </div>
+ </div>
+
+ <div id = "vogonwin">
+ 	<img src = "http://mylolface.com/assets/faces/disappointed-so-close-freddie-mercury.jpg" >
+ 	<div class ="refresh">
+		<p>You Lose D:</p>
+		<input class="button" value="Play again!" onClick="document.location.reload(true)">
+	 </div>
+ </div>
+
+ <div id = "title">
+	 <p> Save yourself from hearing Vogon poetry by beating them at a game of strategy and cunning:</p>
+	 <p> Tic-Tac-Toe!</p>
+</div>
+
+
+<div id = "game">
+	<table>
+		<tr>
+			<td id="1"></td>
+			<td id="2"></td>
+			<td id="3"></td>
+		</tr>
+		<tr>
+			<td id="4"></td>
+			<td id="5"></td>
+			<td id="6"></td>
+		</tr>	
+		<tr>
+			<td id="7"></td>
+			<td id="8"></td>
+			<td id="9"></td>
+		</tr>			
+	</table>
+</div>
+
+ </body>
+ </html>
